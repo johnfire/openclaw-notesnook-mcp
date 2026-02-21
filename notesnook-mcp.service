@@ -1,0 +1,16 @@
+[Unit]
+Description=Notesnook MCP Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node INSTALL_DIR/dist/index.js
+Environment=NOTESNOOK_SYNC_ROOT=SYNC_ROOT_PATH
+Environment=PORT=3457
+Restart=on-failure
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

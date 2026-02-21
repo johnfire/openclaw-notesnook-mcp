@@ -1,0 +1,14 @@
+node_modules/
+dist/
+
+# User-specific sync data (set via NOTESNOOK_SYNC_ROOT env var, not committed)
+notes/
+export/
+import/
+*.db
+config.json
+*.zip
+
+# Dev
+*.js.map
+*.d.ts.map
