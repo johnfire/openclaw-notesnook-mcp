@@ -20,7 +20,7 @@
     "adm-zip": "^0.5.12",
     "better-sqlite3": "^12.6.2",
     "chokidar": "^3.6.0",
-    "node-cron": "^3.0.3",
+    "node-cron": "^4.2.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {
