@@ -18,7 +18,7 @@ const EXTRACTED_DIR = "extracted";
 
 export function findLatestExportZip(exportDir: string): string | null {
   if (!fs.existsSync(exportDir)) return null;
-  const pattern = EXPORT_ZIP_GLOB.replace("*", "");
+  const pattern = EXPORT_ZIP_GLOB.replace(/\*/g, "");
   const files = fs
     .readdirSync(exportDir)
     .filter((f) => f.endsWith(pattern || ".zip"))
